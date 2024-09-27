@@ -1,0 +1,11 @@
+(Nick to summarize)
+Hierarchical Label-wise Attention Network (HLAN)
+https://github.com/acadTags/Explainable-Automated-Medical-Coding
+
+(Will to summarize)
+Improving Medical Code Prediction from Clinical Text via Incorporating Online Knowledge Sources:
+https://github.com/tiantiantu/KSI
+
+(Nick to summarize)
+EHRSQL: A Practical Text-to-SQL Benchmark for Electronic Health Records
+https://github.com/glee4810/EHRSQL
