@@ -4,6 +4,7 @@ https://github.com/acadTags/Explainable-Automated-Medical-Coding
 
 (Will to summarize)
 Improving Medical Code Prediction from Clinical Text via Incorporating Online Knowledge Sources:
+https://dl.acm.org/doi/abs/10.1145/3308558.3313485
 https://github.com/tiantiantu/KSI
 
 (Nick to summarize)

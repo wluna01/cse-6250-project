@@ -1,4 +1,10 @@
-\documentclass[12pt]{article}
+\documentclass[
+	%a4paper, % Use A4 paper size
+	letterpaper, % Use US letter paper size
+]{jdf}
+\addbibresource{references.bib}
+\newcommand{\pcite}[1]{(\cite{#1})}
+
 \usepackage{enumitem}
 \usepackage{setspace}
 \usepackage{graphicx}
@@ -31,13 +37,36 @@
   {\end{proof}}
 
 \title{CSE6250: Big Data Analytics in Healthcare \\ Homework 1}
-\author{Nick Jaramishian & William Luna}
+\author{Nick Jaramishian and William Luna}
 
 \begin{document}
 
 \maketitle
 
-\section{st Paper}
+\section{Papers}
+
+\subsection{Explainable automated coding of clinical notes using hierarchical label-wise attention networks and label embedding initialisation }
+\begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt]
+\item \textbf{Index}: 9, \textbf{Venue}: Journal of Biomedical Informatics
+\item \textbf{Authors}: Hang Dong, Víctor Suarez-Paniagua, William Whiteley, Honghan Wu 
+\item \textbf{Task}: Labeling clinical notes with medical codes based on clinical conditions described in notes using an automated process based on a DL model.
+\item \textbf{Innovation}: The authors develop a new neural network architecture (Hierarchical Label-Wise Attention Network "HLAN") to provide explainable labeling of clinical notes via attention weights. 
+\item \textbf{Advantages / Disadvantages}: The largest advantage of their approach is that the HLAN is able to quanitfy which words in the clinical notes are the most important to the codes assigned to the notes, providing insight into the model's representation of the notes (as opposed to previous black-box methods). One disadvantage is that the HLAN performs slightly worse than SOTA black-box models on certain tasks. 
+\item \textbf{Data}: Accessible via (MIMIC-III), \textbf{Code}: Provided by authors \href{https://github.com/acadTags/Explainable-Automated-Medical-Coding}{on Github}.
+\end{itemize}
+
+\subsection{EHRSQL: A Practical Text-to-SQL Benchmark for Electronic Health Records}
+\begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt]
+\item \textbf{Index}: 90, \textbf{Venue}: arXiv
+\item \textbf{Authors}: Gyubok Lee, Hyeonji Hwang, Seongsu Bae, Yeonsu Kwon, Woncheol Shin, Seongjun Yang, Minjoon Seo, Jongyeup Kim, Edward Choi
+\item \textbf{Task}: Translation of text/speech from medical practitioners into SQL to unlock the potential of dynamically querying EHR databases. 
+\item \textbf{Innovation}: A new text-to-SQL benchmark for EHR data (EHRSQL) is created from a poll of members of a university hospital. The authors also develop a methodology to test language models against the benchmark. 
+\item \textbf{Advantages / Disadvantages}: One advantage of their benchmark evaluation methodology is that it allows the model to discern whether a text question posed is answerable or unanswerable. One of the major disadvantages of this benchmark is that it was created from responses from a single Korean university hospital -- a wider range of hospitals and practitioners would likely provide a more generalized and robust benchmark. Given that the paper was created in 2022, the authors use a now outdated LLM (T5), where newer LLMs may be more capable on text-to-SQL tasks. 
+\item \textbf{Data}: Accessible via Mimic-III and eICU. \href{https://physionet.org/content/eicu-crd/2.0/}{Users must complete a course for eICU}.
+\item \textbf{Code}: Provided with benchmark data \href{https://github.com/glee4810/EHRSQL}{on Github}.
+\end{itemize}
+
+\subsection{Explainable automated coding of clinical notes using hierarchical label-wise attention networks and label embedding initialisation}
 \textbf{Explainable automated coding of clinical notes using hierarchical label-wise attention networks and label embedding initialisation} (Index 9)
 \subsection{Venue}
 Journal of Biomedical Informatics
@@ -56,15 +85,14 @@ One disadvantage is that the HLAN performs slightly worse than SOTA black-box mo
 \subsection{Code Accessibility}
 Code is provided by authors at:
 
-
 \href{https://github.com/acadTags/Explainable-Automated-Medical-Coding}{https://github.com/acadTags/Explainable-Automated-Medical-Coding}.
 
 \section{nd Paper}
-\textbf{} (Index 44)
+\textbf{Improving Medical Code Prediction from Clinical Text via Incorporating Online Knowledge Sources} (Index 44)
 \subsection{Venue}
-
+2019 ACM Worldwide Web Conference
 \subsection{Authors}
-
+Tian Bai & Slobodan Vucetic
 \subsection{Task}
 
 \subsection{Innovation}
@@ -74,10 +102,11 @@ Code is provided by authors at:
 \subsection{Disadvantages}
 
 \subsection{Data Accessibility}
+Data is accessible (MIMIC-III)
 
 \subsection{Code Accessibility}
-
-
+Code is provided by authors at:
+\href{https://github.com/tiantiantu/KSI}{https://github.com/tiantiantu/KSI}
 
 \section{rd Paper}
 \textbf{EHRSQL: A Practical Text-to-SQL Benchmark for Electronic Health Records} (Index 90)
@@ -100,5 +129,16 @@ Code, benchmark data, and model tested (T5) are provided by authors at:
 
 \href{https://github.com/glee4810/EHRSQL}{https://github.com/glee4810/EHRSQL}.
 
+\section{Selecting Paper for Replication}
+
+Which paper you will replicate
+
+Why you chose that paper
+
+What rare the specific hypotheses from the paper that you plan to verify in your reproduction study?
+
+Briefly state how you are assured that you can obtain appropriate data and computational resources including software and hardware demanded in the paper. \cite{scientific_study_of_languages}
+
+\printbibliography{}
 
 \end{document}
