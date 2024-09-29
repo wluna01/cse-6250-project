@@ -37,22 +37,68 @@
 
 \maketitle
 
-\section{This is a section}
-\subsection{This is a subsection}
-\text{this is some text}
+\section{st Paper}
+\textbf{Explainable automated coding of clinical notes using hierarchical label-wise attention networks and label embedding initialisation} (Index 9)
+\subsection{Venue}
+Journal of Biomedical Informatics
+\subsection{Authors}
+Hang Dong, Víctor Suarez-Paniagua, William Whiteley, Honghan Wu 
+\subsection{Task}
+Labeling clinical notes with medical codes based on clinical conditions described in notes using an automated process based on a DL model.
+\subsection{Innovation}
+The authors develop a new neural network architecture (Hierarchical Label-Wise Attention Network "HLAN") to provide explainable labeling of clinical notes via attention weights. 
+\subsection{Advantages}
+The largest advantage of their approach is that the HLAN is able to quanitfy which words in the clinical notes are the most important to the codes assigned to the notes, providing insight into the model's representation of the notes (as opposed to previous black-box methods).
+\subsection{Disadvantages}
+One disadvantage is that the HLAN performs slightly worse than SOTA black-box models on certain tasks. 
+\subsection{Data Accessibility}
+ Data is available (MIMIC-III).
+\subsection{Code Accessibility}
+Code is provided by authors at:
 
-\begin{table}[h]
-\centering
-\begin{tabular}{@{}lcc@{}}
-\toprule
-Minion Name & Accuracy & AUC  \\ \midrule
-Thing One & 0.123 & 0.123 \\
-Thing Two & 0.123 & 0.123 \\
-\bottomrule
-\end{tabular}
-\caption{Some caption}
-\label{tbl:cv}
-\end{table} 
+
+\href{https://github.com/acadTags/Explainable-Automated-Medical-Coding}{https://github.com/acadTags/Explainable-Automated-Medical-Coding}.
+
+\section{nd Paper}
+\textbf{} (Index 44)
+\subsection{Venue}
+
+\subsection{Authors}
+
+\subsection{Task}
+
+\subsection{Innovation}
+
+\subsection{Advantages}
+
+\subsection{Disadvantages}
+
+\subsection{Data Accessibility}
+
+\subsection{Code Accessibility}
+
+
+
+\section{rd Paper}
+\textbf{EHRSQL: A Practical Text-to-SQL Benchmark for Electronic Health Records} (Index 90)
+\subsection{Venue}
+arXiv
+\subsection{Authors}
+Gyubok Lee, Hyeonji Hwang, Seongsu Bae, Yeonsu Kwon, Woncheol Shin, Seongjun Yang, Minjoon Seo, Jongyeup Kim, Edward Choi
+\subsection{Task}
+Translation of text/speech from medical practitioners into SQL to unlock the potential of dynamically querying EHR databases. 
+\subsection{Innovation}
+A new text-to-SQL benchmark for EHR data (EHRSQL) is created from a poll of members of a university hospital. The authors also develop a methodology to test language models against the benchmark. 
+\subsection{Advantages}
+One advantage of their benchmark evaluation methodology is that it allows the model to discern whether a text question posed is answerable or unanswerable.
+\subsection{Disadvantages}
+One of the major disadvantages of this benchmark is that it was created from responses from a single Korean university hospital -- a wider range of hospitals and practitioners would likely provide a more generalized and robust benchmark. Given that the paper was created in 2022, the authors use a now outdated LLM (T5), where newer LLMs may be more capable on text-to-SQL tasks.
+\subsection{Data Accessibility}
+Yes, data (Mimic-III and eICU) are available. Users must complete a course for eICU
+\subsection{Code Accessibility}
+Code, benchmark data, and model tested (T5) are provided by authors at:
+
+\href{https://github.com/glee4810/EHRSQL}{https://github.com/glee4810/EHRSQL}.
 
 
 \end{document}
