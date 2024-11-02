@@ -1,0 +1,40 @@
+\documentclass[
+	%a4paper, % Use A4 paper size
+	letterpaper, % Use US letter paper size
+]{jdf}
+\addbibresource{references.bib}
+\newcommand{\pcite}[1]{(\cite{#1})}
+
+\usepackage{enumitem}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{amsmath, amsthm}
+\usepackage{booktabs}
+
+\begin{document}
+
+% Margins
+\topmargin=-0.45in
+\evensidemargin=0in
+\oddsidemargin=0in
+\textwidth=6.5in
+\textheight=9.0in
+\headsep=0.25in
+
+\linespread{1.1}
+
+\section{Selected Paper}
+
+\subsection{Improving Medical Code Prediction from Clinical Text via Incorporating Online Knowledge Sources}
+\begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt]
+\item \textbf{Index}: 44, \textbf{Venue}: 2019 ACM Worldwide Conference, \textbf{Citation}: \pcite{improving_code_prediction}
+\item \textbf{Authors}: Tian Bai and Slobodan Vucetic
+\item \textbf{Task}: Accurately predicting ICD codes from clinical notes via several deep learning models–RNN and CNN with and without an attention mechanism.
+\item \textbf{Data}: Accessible via Mimic-III, \textbf{Code}: provided by authors \href{https://github.com/tiantiantu/KSI}{on GitHub}
+\end{itemize}
+
+
+\printbibliography{}
+
+\end{document}
